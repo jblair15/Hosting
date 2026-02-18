@@ -23,51 +23,47 @@
   </div>
 
   
-  <!-- Navigation -->
-<nav class="fixed top-0 left-0 w-full h-20 text-black dark:text-white z-50 transition-colors duration-500">
-  <div class="relative h-full max-w-full">
+ <!-- Navigation -->
+<nav class="fixed top-0 left-0 w-full bg-white dark:bg-black 
+            text-black dark:text-white z-50 transition-colors duration-500 shadow-md">
 
-    <img
-      src="favicon.png"
-      class="absolute left-12 top-2 h-16"
-      alt="JB Logo"
-    />
+  <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 
-    <div class="absolute right-12 top-7 flex gap-10 items-center text-lg">
-      <a href="#home" class="relative cursor-pointer
-          before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-full before:h-[2px]
-          before:bg-cyan-400 before:scale-x-0 before:origin-left before:transition-transform before:duration-300
-          hover:before:scale-x-100">
-        Home
-      </a>
-      <a href="#about" class="relative cursor-pointer
-          before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-full before:h-[2px]
-          before:bg-cyan-400 before:scale-x-0 before:origin-left before:transition-transform before:duration-300
-          hover:before:scale-x-100">
-        About
-      </a>
+    <img src="favicon.png" class="h-14" alt="JB Logo" />
 
-      <a href="#projects" class="relative cursor-pointer
-          before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-full before:h-[2px]
-          before:bg-cyan-400 before:scale-x-0 before:origin-left before:transition-transform before:duration-300
-          hover:before:scale-x-100">
-        Projects
-      </a>
-
-      <a href="#contact" class="relative cursor-pointer
-          before:content-[''] before:absolute before:-bottom-1 before:left-0 before:w-full before:h-[2px]
-          before:bg-cyan-400 before:scale-x-0 before:origin-left before:transition-transform before:duration-300
-          hover:before:scale-x-100">
-        Contact
-      </a>
+    <div class="hidden md:flex gap-10 items-center text-lg">
+      
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
 
       <button id="theme-toggle" class="text-2xl">
         <i class="fas fa-moon"></i>
       </button>
     </div>
 
+    <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
+
   </div>
+
+  <div id="mobile-menu" 
+       class="hidden flex-col items-center gap-6 py-6 bg-white dark:bg-black md:hidden text-lg">
+
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+
+    <button id="theme-toggle-mobile" class="text-2xl">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+
 </nav>
+
 
 <!-- Home -->
 <section id="home" class="min-h-screen flex items-center justify-center">
