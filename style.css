@@ -95,6 +95,36 @@ html:not(.dark) .nav-links a {
   text-decoration: underline;
 }
 
+.nav-link {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #22d3ee;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::before {
+  transform: scaleX(1);
+}
+
+.mobile-link {
+  transition: color 0.3s ease;
+}
+
+.mobile-link:hover {
+  color: #22d3ee;
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
