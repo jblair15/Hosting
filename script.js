@@ -18,6 +18,15 @@
   });
 
 
+//navigation
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
+
+
 // Dark & Light Mode Toggle
 const toggleBtn = document.getElementById("theme-toggle");
 const html = document.documentElement;
